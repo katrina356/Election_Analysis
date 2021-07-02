@@ -32,4 +32,5 @@ The results of the challenge show that:
  - Arapahoe had the least voter turnout at 24,801 votes (6.7% of the total votes)
 
 ## Election Audit Summary
-I would recommend utilizing the code created for this analysis in other elections like this one.  In addition with some small modifications this could be used for other elections.  This would save time and potential errors but utilizing this code as a starting basis and modifying as needed.  For example
+I would recommend utilizing the code created in this analysis in other elections like this one across the state of colorado.  For example:
+ - Other precincts could use the code exactly as is.  The only change would be changing the source file.  CSV file would need to be changed.  
