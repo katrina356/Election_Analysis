@@ -33,4 +33,6 @@ The results of the challenge show that:
 
 ## Election Audit Summary
 I would recommend utilizing the code created in this analysis in other elections like this one across the state of colorado.  For example:
- - Other precincts could use the code exactly as is.  The only change would be changing the source file.  CSV file would need to be changed.  
+ - Other precincts could use the code exactly as is.  The only change would be changing the source file name and folder.  The other option would be for other precincts to set up their folders with the same naming convention.  Some of the lines that would need to be changed are:
+ 'file_to_load = os.path.join("Resources", "election_results.csv")' 
+ 'file_to_save = os.path.join("Resources", "election_analysis.txt")' 
