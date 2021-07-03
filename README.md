@@ -32,7 +32,9 @@ The results of the challenge show that:
  - Arapahoe had the least voter turnout at 24,801 votes (6.7% of the total votes)
 
 ## Election Audit Summary
-I would recommend utilizing the code created in this analysis in other elections like this one across the state of colorado.  For example:
- - Other precincts could use the code exactly as is.  The only change would be changing the source file name and folder.  The other option would be for other precincts to set up their folders with the same naming convention.  Some of the lines that would need to be changed are:
- 'file_to_load = os.path.join("Resources", "election_results.csv")' 
- 'file_to_save = os.path.join("Resources", "election_analysis.txt")' 
+I would recommend utilizing the code created in this analysis in other elections across the state of colorado.  For example:
+ - Other precincts could use the code exactly as is for their congressional candidate elections.  Other precincts could either make certain their file naming convention matches that which is in this code or modify the code to fit their naming conventions.  The line item code that needs to be verified :
+   line 9 -  `file_to_load = os.path.join("Resources", "election_results.csv")` 
+   line 11 -  `file_to_save = os.path.join("Resources", "election_analysis.txt")` 
+ - This could also be used for US Senator elections in any state.  Each state elects 2 senators, for 6 year terms.  In this case you don't need to change anything to the code, your source file will just be larger.  Typically not both senate seats are open at one time for states so you will only need to find the candidate with the most popular vote.  You could remove the county portion of the code since the entire population votes for a Senator unless you would like county analytics in your results, which county voted the most and for which candidate.
+   
